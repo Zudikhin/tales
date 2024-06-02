@@ -988,7 +988,7 @@ p {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.first_block svg defs {
+.first_block svg .defs {
   display: none;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -1003,30 +1003,6 @@ p {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.first.complete .first_block:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.first.complete .first_block:hover .tawny_back {
-  opacity: 1;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.first.complete .first_block:hover .thoughts_back {
-  opacity: 1;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.first.complete .first_block:hover .pi_back {
-  opacity: 1;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.first.complete .first_block:hover svg defs {
-  display: block;
-}
 @media (min-width: 768px) {
   .first_block .venice_back {
     width: 630px;
@@ -1038,6 +1014,30 @@ p {
 @media (min-width: 1024px) {
   .first {
     height: 800px;
+  }
+  .first.complete .first_block:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .first.complete .first_block:hover .tawny_back {
+    opacity: 1;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .first.complete .first_block:hover .thoughts_back {
+    opacity: 1;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .first.complete .first_block:hover .pi_back {
+    opacity: 1;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .first.complete .first_block:hover svg defs {
+    display: block;
   }
 }
 

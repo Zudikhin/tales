@@ -12,6 +12,12 @@ $(document).ready(function() {
         }
     });
 
+    if($('.jarallax').length) {
+        $('.jarallax').jarallax({
+            speed: 0.2
+        });
+    }
+
     anime({
         targets: '.first .lines path',
         strokeDashoffset: [anime.setDashoffset, 0],
@@ -91,24 +97,6 @@ $(document).ready(function() {
             }
         }
     });
-
-    $('.jarallax').jarallax({
-        speed: 0.2
-    });
-        
-    // function animation() {
-    //     var count = $("#tawnyDetail").find("path").length;
-    //     var second = 10;
-    //     var iteration = second/count;
-    //     console.log(iteration);
-
-    //     $("#tawnyDetail").find("path").each(function() {
-
-    //     });
-    // }
-
-    // animation();
-
 
 });
 
