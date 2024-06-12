@@ -450,6 +450,9 @@ p {
   text-align: center;
   color: #fff;
   margin-top: 25px;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .main .pi_home {
   display: -webkit-box;
@@ -476,6 +479,9 @@ p {
   color: #fff;
   position: relative;
   margin-top: 40px;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .main .thoughts_home {
   display: -webkit-box;
@@ -500,6 +506,9 @@ p {
   line-height: 36px;
   text-align: center;
   color: #fff;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .main .venice_home {
   display: -webkit-box;
@@ -525,6 +534,9 @@ p {
   text-align: center;
   color: #fff;
   margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 @media (min-width: 768px) {
   .main {
@@ -711,7 +723,7 @@ p {
   position: absolute;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  opacity: 0;
+  opacity: 0.3;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -726,10 +738,18 @@ p {
 }
 .tawny_wrap.complete .img_tawny {
   opacity: 1;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+.tawny_wrap.complete h4 {
+  opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 @media (min-width: 1024px) {
+  .tawny_wrap.complete h4 {
+    opacity: 0;
+  }
   .tawny_wrap.complete:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
@@ -755,7 +775,7 @@ p {
   position: absolute;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  opacity: 0;
+  opacity: 0.3;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -766,10 +786,18 @@ p {
 }
 .pi_wrap.complete .img_pi {
   opacity: 1;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+.pi_wrap.complete h4 {
+  opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 @media (min-width: 1024px) {
+  .pi_wrap.complete h4 {
+    opacity: 0;
+  }
   .pi_wrap.complete:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
@@ -795,7 +823,7 @@ p {
   position: absolute;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  opacity: 0;
+  opacity: 0.3;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   width: 240px;
@@ -812,10 +840,18 @@ p {
 }
 .thoughts_wrap.complete .img_thoughts {
   opacity: 1;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+.thoughts_wrap.complete h4 {
+  opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 @media (min-width: 1024px) {
+  .thoughts_wrap.complete h4 {
+    opacity: 0;
+  }
   .thoughts_wrap.complete:hover {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
@@ -842,7 +878,7 @@ p {
   position: absolute;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
-  opacity: 0;
+  opacity: 0.3;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -858,6 +894,11 @@ p {
 }
 .venice_wrap.complete .img_venice {
   opacity: 1;
+  -webkit-transition: all 0.6s linear;
+  transition: all 0.6s linear;
+}
+.venice_wrap.complete h4 {
+  opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -867,6 +908,9 @@ p {
   }
   .venice_wrap .img_venice {
     width: 360px;
+  }
+  .venice_wrap.complete h4 {
+    opacity: 0;
   }
   .venice_wrap.complete:hover {
     -webkit-transform: scale(1.2);
