@@ -19,81 +19,61 @@ $(document).ready(function() {
     }
 
     anime({
-        targets: '.first .lines path',
-        strokeDashoffset: [anime.setDashoffset, 0],
+        targets: '.main_tawny path',
+        opacity: 1,
         easing: 'easeInOutSine',
-        duration: 500,
-        delay: function(el, i) { return i * 500 },
+        duration: 200,
+        delay: function(el, i) { return i * 200 },
         direction: 'none',
         loop: false,
         update: function(anim) {
-            $(".first .lines path").css("opacity", "1");
             if(anim.progress == 100) {
-                $(".first").addClass("complete");
+                $(".tawny_wrap").addClass("complete");
             }
         }
     });
 
     anime({
-        targets: '.main_tawny .lines path',
-        strokeDashoffset: [anime.setDashoffset, 0],
+        targets: '.main_pi path',
+        opacity: 1,
         easing: 'easeInOutSine',
-        duration: 500,
-        delay: function(el, i) { return i * 500 },
+        duration: 200,
+        delay: function(el, i) { return i * 200 },
         direction: 'none',
         loop: false,
         update: function(anim) {
-            $(".main_tawny .lines path").css("opacity", "1");
             if(anim.progress == 100) {
-                $(".main_tawny").addClass("complete");
+                $(".pi_wrap").addClass("complete");
             }
         }
     });
 
     anime({
-        targets: '.main_pi .lines path',
-        strokeDashoffset: [anime.setDashoffset, 0],
+        targets: '.main_thoughts path',
+        opacity: 1,
         easing: 'easeInOutSine',
-        duration: 500,
-        delay: function(el, i) { return i * 500 },
+        duration: 180,
+        delay: function(el, i) { return i * 180 },
         direction: 'none',
         loop: false,
         update: function(anim) {
-            $(".main_pi .lines path").css("opacity", "1");
             if(anim.progress == 100) {
-                $(".main_pi").addClass("complete");
+                $(".thoughts_wrap").addClass("complete");
             }
         }
     });
 
     anime({
-        targets: '.main_thoughts .lines path',
-        strokeDashoffset: [anime.setDashoffset, 0],
+        targets: '.main_venice path',
+        opacity: 1,
         easing: 'easeInOutSine',
-        duration: 500,
-        delay: function(el, i) { return i * 500 },
+        duration: 200,
+        delay: function(el, i) { return i * 200 },
         direction: 'none',
         loop: false,
         update: function(anim) {
-            $(".main_thoughts .lines path").css("opacity", "1");
             if(anim.progress == 100) {
-                $(".main_thoughts").addClass("complete");
-            }
-        }
-    });
-
-    anime({
-        targets: '.main_venice .lines path',
-        strokeDashoffset: [anime.setDashoffset, 0],
-        easing: 'easeInOutSine',
-        duration: 400,
-        delay: function(el, i) { return i * 400 },
-        direction: 'none',
-        loop: false,
-        update: function(anim) {
-            $(".main_venice .lines path").css("opacity", "1");
-            if(anim.progress == 100) {
-                $(".main_venice").addClass("complete");
+                $(".venice_wrap").addClass("complete");
             }
         }
     });

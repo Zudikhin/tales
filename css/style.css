@@ -427,7 +427,7 @@ p {
 .main .container {
   padding: 0px;
 }
-.main_tawny {
+.main .tawny_home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -442,34 +442,16 @@ p {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.main_tawny .tawny_back {
-  width: 290px;
-  -webkit-transform: translate(10px, 14px);
-          transform: translate(10px, 14px);
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.main_tawny svg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 180px;
-}
-.main_tawny svg path {
-  opacity: 0;
-}
-.main_tawny h4 {
+.main .tawny_home h4 {
   font-family: "Special Elite", system-ui;
   font-size: 22px;
   font-weight: 400;
   line-height: 36px;
   text-align: center;
   color: #fff;
-  margin-top: 15px;
+  margin-top: 25px;
 }
-.main_pi {
+.main .pi_home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -485,21 +467,7 @@ p {
   transition: all 0.3s linear;
   margin-top: 50px;
 }
-.main_pi .pi_back {
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.main_pi svg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.main_pi svg path {
-  opacity: 0;
-}
-.main_pi h4 {
+.main .pi_home h4 {
   font-family: "Special Elite", system-ui;
   font-size: 22px;
   font-weight: 400;
@@ -507,9 +475,9 @@ p {
   text-align: center;
   color: #fff;
   position: relative;
-  top: -50px;
+  margin-top: 40px;
 }
-.main_thoughts {
+.main .thoughts_home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -523,24 +491,9 @@ p {
   position: relative;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  margin-top: 0px;
 }
-.main_thoughts .thoughts_back {
-  -webkit-transform: translate(5px, 28px);
-          transform: translate(5px, 28px);
-  width: 312px;
-}
-.main_thoughts svg {
-  width: 240px;
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.main_thoughts svg path {
-  opacity: 0;
-}
-.main_thoughts h4 {
+.main .thoughts_home h4 {
   font-family: "Special Elite", system-ui;
   font-size: 22px;
   font-weight: 400;
@@ -548,7 +501,7 @@ p {
   text-align: center;
   color: #fff;
 }
-.main_venice {
+.main .venice_home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -564,46 +517,14 @@ p {
   transition: all 0.3s linear;
   margin-top: 50px;
 }
-.main_venice .venice_back {
-  width: 375px;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.main_venice svg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.main_venice svg.venice_svg {
-  width: 271px;
-}
-.main_venice svg path {
-  opacity: 0;
-}
-.main_venice svg .venice_text {
-  opacity: 0;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.main_venice h4 {
+.main .venice_home h4 {
   font-family: "Special Elite", system-ui;
   font-size: 22px;
   font-weight: 400;
   line-height: 36px;
   text-align: center;
   color: #fff;
-}
-.main_venice.complete svg .venice_text {
-  opacity: 1;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.main_venice.complete svg .venice_text path {
-  opacity: 1;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+  margin-top: 10px;
 }
 @media (min-width: 768px) {
   .main {
@@ -626,27 +547,19 @@ p {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
-  .main_tawny {
+  .main .tawny_home {
     width: calc(50% - 30px);
   }
-  .main_tawny .tawny_back {
-    -webkit-transform: translate(8px, 36px);
-            transform: translate(8px, 36px);
-  }
-  .main_pi {
+  .main .pi_home {
     width: calc(50% - 30px);
     margin-top: 0px;
   }
-  .main_thoughts {
+  .main .thoughts_home {
     width: calc(50% - 30px);
     margin-top: 60px;
   }
-  .main_venice {
+  .main .venice_home {
     width: calc(50% - 30px);
-  }
-  .main_venice .venice_back {
-    -webkit-transform: translateY(14px);
-            transform: translateY(14px);
   }
 }
 @media (min-width: 1024px) {
@@ -659,120 +572,53 @@ p {
     position: relative;
     padding: 0px 45px;
   }
-  .main_tawny {
+  .main .tawny_home {
     position: absolute;
-    left: 0px;
+    left: 75px;
+    top: 150px;
+    width: auto;
+  }
+  .main .tawny_home h4 {
+    font-size: 24px;
+    line-height: 32px;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    position: relative;
+    top: -40px;
+    opacity: 0;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .main .pi_home {
+    display: block;
+    position: absolute;
+    width: auto;
+    top: 127px;
+    left: calc(50% - 100px);
+  }
+  .main .pi_home h4 {
+    font-size: 24px;
+    line-height: 32px;
+    -webkit-transform: scale(1.5);
+            transform: scale(1.5);
+    position: relative;
+    top: -40px;
+    opacity: 0;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .main .thoughts_home {
+    display: block;
+    position: absolute;
+    width: auto;
+    right: 50px;
     top: 100px;
     width: auto;
+    margin-top: 0px;
   }
-  .main_tawny .tawny_back {
-    opacity: 0.5;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_tawny svg defs {
-    display: none;
-  }
-  .main_tawny h4 {
-    font-size: 32px;
-    line-height: 44px;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-    position: relative;
-    top: -40px;
-    opacity: 0;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_tawny.complete:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_tawny.complete:hover .tawny_back {
-    opacity: 1;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_tawny.complete:hover svg defs {
-    display: block;
-  }
-  .main_tawny.complete:hover h4 {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    top: 0px;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_pi {
-    display: block;
-    position: absolute;
-    width: auto;
-    top: 80px;
-    left: calc(50% - 130px);
-  }
-  .main_pi .pi_back {
-    opacity: 0.5;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_pi svg defs {
-    display: none;
-  }
-  .main_pi h4 {
-    font-size: 32px;
-    line-height: 44px;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
-    position: relative;
-    top: -40px;
-    opacity: 0;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_pi.complete:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_pi.complete:hover .pi_back {
-    opacity: 1;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_pi.complete:hover svg defs {
-    display: block;
-  }
-  .main_pi.complete:hover h4 {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    top: -40px;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_thoughts {
-    display: block;
-    position: absolute;
-    width: auto;
-    right: 0px;
-    top: 100px;
-    width: auto;
-  }
-  .main_thoughts .thoughts_back {
-    opacity: 0.5;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_thoughts svg defs {
-    display: none;
-  }
-  .main_thoughts h4 {
-    font-size: 32px;
-    line-height: 44px;
+  .main .thoughts_home h4 {
+    font-size: 24px;
+    line-height: 32px;
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
     position: relative;
@@ -781,75 +627,24 @@ p {
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
   }
-  .main_thoughts.complete:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_thoughts.complete:hover .thoughts_back {
-    opacity: 1;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_thoughts.complete:hover svg defs {
-    display: block;
-  }
-  .main_thoughts.complete:hover h4 {
-    opacity: 1;
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    top: 0px;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_venice {
+  .main .venice_home {
     display: block;
     position: absolute;
     bottom: 80px;
-    left: calc(50% - 235px);
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: auto;
   }
-  .main_venice .tawny_back {
-    opacity: 0.5;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_venice svg.venice_svg {
-    width: 470px;
-  }
-  .main_venice svg defs {
-    display: none;
-  }
-  .main_venice h4 {
-    font-size: 32px;
-    line-height: 44px;
+  .main .venice_home h4 {
+    font-size: 24px;
+    line-height: 32px;
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
     position: relative;
     top: 0px;
     opacity: 0;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_venice.complete:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_venice.complete:hover .tawny_back {
-    opacity: 1;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .main_venice.complete:hover svg defs {
-    display: block;
-  }
-  .main_venice.complete:hover h4 {
-    opacity: 1;
-    top: 50px;
-    -webkit-transform: scale(1);
-            transform: scale(1);
+    margin-top: 25px;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
   }
@@ -859,69 +654,233 @@ p {
     height: 100vh;
     padding-top: 100px;
   }
-  .main_tawny h4 {
+  .main .tawny_home h4 {
     font-size: 28px;
     line-height: 40px;
   }
-  .main_pi {
+  .main .pi_home {
     width: 200px;
     height: 250px;
+    top: 90px;
   }
-  .main_pi .pi_back {
-    width: 280px;
-    -webkit-transform: translate(-47px, -47px);
-            transform: translate(-47px, -47px);
-  }
-  .main_pi h4 {
-    bottom: 125px;
-    top: auto;
+  .main .pi_home h4 {
     font-size: 28px;
     line-height: 40px;
   }
-  .main_pi.complete:hover h4 {
+  .main .pi_home.complete:hover h4 {
     top: auto;
   }
-  .main_thoughts {
+  .main .thoughts_home {
     margin-top: 0px;
   }
-  .main_thoughts h4 {
+  .main .thoughts_home h4 {
     font-size: 28px;
     line-height: 40px;
   }
-  .main_venice {
+  .main .venice_home {
     margin-top: 0px;
     bottom: 100px;
-    left: calc(50% - 270px);
   }
-  .main_venice .venice_back {
-    width: 485px;
-    -webkit-transform: translate(28px, 28px);
-            transform: translate(28px, 28px);
-  }
-  .main_venice svg.venice_svg {
-    width: 350px;
-  }
-  .main_venice h4 {
+  .main .venice_home h4 {
     top: -15px;
     font-size: 28px;
     line-height: 40px;
-  }
-  .main_venice.complete:hover h4 {
-    top: -15px;
   }
 }
 @media (min-width: 1600px) {
-  .main_pi {
+  .main .pi_home {
     top: 130px;
   }
-  .main_tawny {
+  .main .tawny_home {
     top: 150px;
   }
-  .main_thoughts {
+  .main .thoughts_home {
     top: 150px;
   }
-  .main_venice {
+  .main .venice_home {
     bottom: 130px;
+  }
+}
+
+.tawny_wrap {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.tawny_wrap .img_tawny {
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.tawny_wrap .main_tawny {
+  -webkit-transform: translate(14px, 5px);
+          transform: translate(14px, 5px);
+}
+.tawny_wrap .main_tawny path {
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.tawny_wrap.complete .img_tawny {
+  opacity: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+@media (min-width: 1024px) {
+  .tawny_wrap.complete:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .tawny_wrap.complete:hover h4 {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    top: 0px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+}
+
+.pi_wrap {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.pi_wrap .img_pi {
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.pi_wrap .main_pi path {
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.pi_wrap.complete .img_pi {
+  opacity: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+@media (min-width: 1024px) {
+  .pi_wrap.complete:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .pi_wrap.complete:hover h4 {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    top: 0px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+}
+
+.thoughts_wrap {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.thoughts_wrap .img_thoughts {
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  width: 240px;
+}
+.thoughts_wrap .main_thoughts {
+  -webkit-transform: translate(-10px, 46px);
+          transform: translate(-10px, 46px);
+  width: 222px;
+}
+.thoughts_wrap .main_thoughts path {
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.thoughts_wrap.complete .img_thoughts {
+  opacity: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+@media (min-width: 1024px) {
+  .thoughts_wrap.complete:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .thoughts_wrap.complete:hover h4 {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    top: 0px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+}
+
+.venice_wrap {
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.venice_wrap .img_venice {
+  left: 50%;
+  width: 300px;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.venice_wrap .main_venice {
+  -webkit-transform: translate(3px, 15px);
+          transform: translate(3px, 15px);
+  width: 292px;
+}
+.venice_wrap .main_venice path {
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.venice_wrap.complete .img_venice {
+  opacity: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+@media (min-width: 1024px) {
+  .venice_wrap .main_venice {
+    width: 344px;
+  }
+  .venice_wrap .img_venice {
+    width: 360px;
+  }
+  .venice_wrap.complete:hover {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .venice_wrap.complete:hover h4 {
+    opacity: 1;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    top: 0px;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
   }
 }
 
@@ -937,72 +896,6 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.first_block {
-  position: relative;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.first_block .tawny_back {
-  width: 348px;
-  opacity: 0.5;
-  -webkit-transform: translate(10px, 14px);
-          transform: translate(10px, 14px);
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.first_block .thoughts_back {
-  -webkit-transform: translate(5px, 28px);
-          transform: translate(5px, 28px);
-  opacity: 0.5;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.first_block .venice_back {
-  width: 375px;
-  opacity: 0.5;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.first_block .pi_back {
-  -webkit-transform: translateY(-13px);
-          transform: translateY(-13px);
-  opacity: 0.5;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.first_block svg {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-.first_block svg.venice_svg {
-  width: 271px;
-}
-.first_block svg path {
-  opacity: 0;
-}
-.first_block svg .venice_text {
-  opacity: 0;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.first_block svg .defs {
-  display: none;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.first.complete .first_block svg .venice_text {
-  opacity: 1;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.first.complete .first_block svg .venice_text path {
-  opacity: 1;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
 @media (min-width: 768px) {
   .first_block .venice_back {
     width: 630px;
@@ -1014,30 +907,6 @@ p {
 @media (min-width: 1024px) {
   .first {
     height: 800px;
-  }
-  .first.complete .first_block:hover {
-    -webkit-transform: scale(1.2);
-            transform: scale(1.2);
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .first.complete .first_block:hover .tawny_back {
-    opacity: 1;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .first.complete .first_block:hover .thoughts_back {
-    opacity: 1;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .first.complete .first_block:hover .pi_back {
-    opacity: 1;
-    -webkit-transition: all 0.3s linear;
-    transition: all 0.3s linear;
-  }
-  .first.complete .first_block:hover svg defs {
-    display: block;
   }
 }
 
