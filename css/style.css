@@ -761,12 +761,15 @@ p {
 }
 .tawny_wrap.complete .img_tawny {
   opacity: 0.3;
-  -webkit-transition: all 0.6s linear;
   transition: all 0.6s linear;
+  -webkit-transition: all 0.6s linear;
+  -moz-transition: all 0.6s linear;
+  -ms-transition: all 0.6s linear;
+  -o-transition: all 0.6s linear;
 }
 .tawny_wrap.complete .main_tawny {
-  -webkit-animation: fade-img 3s infinite;
-          animation: fade-img 3s infinite;
+  animation: fade-img 3s ease-in-out -1.5s infinite alternate;
+  -webkit-animation: fade-img 3s ease-in-out -1.5s infinite alternate;
 }
 .tawny_wrap.complete h4 {
   opacity: 1;
@@ -828,8 +831,8 @@ p {
   transition: all 0.6s linear;
 }
 .pi_wrap.complete .main_pi {
-  -webkit-animation: fade-img 3s infinite;
-          animation: fade-img 3s infinite;
+  animation: fade-img 3s ease-in-out -0.5s infinite alternate;
+  -webkit-animation: fade-img 3s ease-in-out -0.5s infinite alternate;
 }
 .pi_wrap.complete h4 {
   opacity: 1;
@@ -897,8 +900,8 @@ p {
   transition: all 0.6s linear;
 }
 .thoughts_wrap.complete .main_thoughts {
-  -webkit-animation: fade-img 3s infinite;
-          animation: fade-img 3s infinite;
+  animation: fade-img 3s ease-in-out 1s infinite alternate;
+  -webkit-animation: fade-img 3s ease-in-out 1s infinite alternate;
 }
 .thoughts_wrap.complete h4 {
   opacity: 1;
@@ -966,8 +969,8 @@ p {
   transition: all 0.6s linear;
 }
 .venice_wrap.complete .main_venice {
-  -webkit-animation: fade-img 3s infinite;
-          animation: fade-img 3s infinite;
+  animation: fade-img 3s ease-in-out 2s infinite alternate;
+  -webkit-animation: fade-img 3s ease-in-out 2s infinite alternate;
 }
 .venice_wrap.complete h4 {
   opacity: 1;

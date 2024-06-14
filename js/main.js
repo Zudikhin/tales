@@ -23,7 +23,13 @@ $(document).ready(function() {
         opacity: 1,
         easing: 'easeInOutSine',
         duration: 200,
-        delay: function(el, i) { return i * 200 },
+        delay: function(el, i) {
+            if(i % 2 == 0) {
+                return i * 200 
+            } else {
+                return i * 300 
+            }
+        },
         direction: 'none',
         loop: false,
         update: function(anim) {
@@ -38,7 +44,13 @@ $(document).ready(function() {
         opacity: 1,
         easing: 'easeInOutSine',
         duration: 200,
-        delay: function(el, i) { return i * 200 },
+        delay: function(el, i) {
+            if(i % 2 == 0) {
+                return i * 200 
+            } else {
+                return i * 300 
+            }
+        },
         direction: 'none',
         loop: false,
         update: function(anim) {
@@ -53,7 +65,13 @@ $(document).ready(function() {
         opacity: 1,
         easing: 'easeInOutSine',
         duration: 180,
-        delay: function(el, i) { return i * 180 },
+        delay: function(el, i) {
+            if(i % 2 == 0) {
+                return i * 200 
+            } else {
+                return i * 300 
+            }
+        },
         direction: 'none',
         loop: false,
         update: function(anim) {
@@ -68,7 +86,13 @@ $(document).ready(function() {
         opacity: 1,
         easing: 'easeInOutSine',
         duration: 200,
-        delay: function(el, i) { return i * 200 },
+        delay: function(el, i) {
+            if(i % 2 == 0) {
+                return i * 200 
+            } else {
+                return i * 300 
+            }
+        },
         direction: 'none',
         loop: false,
         update: function(anim) {
