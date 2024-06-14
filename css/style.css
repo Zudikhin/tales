@@ -439,6 +439,7 @@ p {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
+  margin-top: 30px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -449,8 +450,8 @@ p {
   line-height: 36px;
   text-align: center;
   color: #fff;
-  margin-top: 25px;
-  opacity: 0;
+  margin-top: 10px;
+  opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -478,8 +479,8 @@ p {
   text-align: center;
   color: #fff;
   position: relative;
-  margin-top: 40px;
-  opacity: 0;
+  margin-top: 10px;
+  opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -500,13 +501,16 @@ p {
   margin-top: 0px;
 }
 .main .thoughts_home h4 {
+  position: absolute;
+  left: 50px;
+  bottom: 0px;
   font-family: "Special Elite", system-ui;
   font-size: 22px;
   font-weight: 400;
   line-height: 36px;
   text-align: center;
   color: #fff;
-  opacity: 0;
+  opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -533,8 +537,8 @@ p {
   line-height: 36px;
   text-align: center;
   color: #fff;
-  margin-top: 10px;
-  opacity: 0;
+  margin-top: 0px;
+  opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -633,8 +637,8 @@ p {
     line-height: 32px;
     -webkit-transform: scale(1.5);
             transform: scale(1.5);
-    position: relative;
-    top: 0px;
+    position: absolute;
+    bottom: 10px;
     opacity: 0;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
@@ -656,7 +660,7 @@ p {
     position: relative;
     top: 0px;
     opacity: 0;
-    margin-top: 25px;
+    margin-top: 0px;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
   }
@@ -740,123 +744,167 @@ p {
 .tawny_wrap {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  position: relative;
 }
 .tawny_wrap .img_tawny {
-  left: 50%;
+  opacity: 0.3;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.tawny_wrap_star img {
   position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  opacity: 0.3;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
 }
-.tawny_wrap .main_tawny {
-  -webkit-transform: translate(14px, 5px);
-          transform: translate(14px, 5px);
+.tawny_wrap_star img:first-child {
+  top: 10px;
+  left: 76px;
+  -webkit-animation: fade-img 4s ease-in-out infinite;
+          animation: fade-img 4s ease-in-out infinite;
 }
-.tawny_wrap .main_tawny path {
-  opacity: 0;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+.tawny_wrap_star img:nth-child(2) {
+  top: 66px;
+  left: 22px;
+  -webkit-animation: fade-img 5s ease-in-out infinite;
+          animation: fade-img 5s ease-in-out infinite;
 }
-.tawny_wrap.complete .img_tawny {
-  opacity: 0.3;
-  transition: all 0.6s linear;
-  -webkit-transition: all 0.6s linear;
-  -moz-transition: all 0.6s linear;
-  -ms-transition: all 0.6s linear;
-  -o-transition: all 0.6s linear;
+.tawny_wrap_star img:nth-child(3) {
+  top: 118px;
+  left: 126px;
+  -webkit-animation: fade-img 3s ease infinite;
+          animation: fade-img 3s ease infinite;
 }
-.tawny_wrap.complete .main_tawny {
-  animation: fade-img 3s ease-in-out -1.5s infinite alternate;
-  -webkit-animation: fade-img 3s ease-in-out -1.5s infinite alternate;
+.tawny_wrap_star img:nth-child(4) {
+  top: 172px;
+  left: 24px;
+  -webkit-animation: fade-img 4s ease infinite;
+          animation: fade-img 4s ease infinite;
 }
-.tawny_wrap.complete h4 {
+.tawny_wrap_star img:nth-child(5) {
+  top: 230px;
+  left: 110px;
+  -webkit-animation: fade-img 3s ease infinite;
+          animation: fade-img 3s ease infinite;
+}
+.tawny_wrap_star img:nth-child(6) {
+  top: 265px;
+  left: 71px;
+  -webkit-animation: fade-img 4s ease infinite;
+          animation: fade-img 4s ease infinite;
+}
+.tawny_wrap_star img:nth-child(7) {
+  top: 319px;
+  left: 33px;
+  -webkit-animation: fade-img 5s ease infinite;
+          animation: fade-img 5s ease infinite;
+}
+.tawny_wrap_star img:nth-child(8) {
+  top: 317px;
+  left: 146px;
+  -webkit-animation: fade-img 3s ease infinite;
+          animation: fade-img 3s ease infinite;
+}
+.tawny_wrap h4 {
   opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.tawny_wrap.complete:hover {
+.tawny_wrap:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.tawny_wrap.complete:hover .img_tawny {
+.tawny_wrap:hover .img_tawny {
   opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.tawny_wrap.complete:hover .main_tawny {
-  -webkit-animation: 0;
-          animation: 0;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.tawny_wrap.complete:hover h4 {
+.tawny_wrap:hover h4 {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
   top: 0px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-}
-@media (min-width: 1024px) {
-  .tawny_wrap.complete h4 {
-    opacity: 0;
-  }
 }
 
 .pi_wrap {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  position: relative;
 }
 .pi_wrap .img_pi {
-  left: 50%;
+  opacity: 0.3;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.pi_wrap_star img {
   position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-  opacity: 0.3;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
 }
-.pi_wrap .main_pi path {
-  opacity: 0;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+.pi_wrap_star img:first-child {
+  left: 20px;
+  top: 10px;
+  -webkit-animation: fade-img 4s ease-in-out infinite;
+          animation: fade-img 4s ease-in-out infinite;
 }
-.pi_wrap.complete .img_pi {
-  opacity: 0.3;
-  -webkit-transition: all 0.6s linear;
-  transition: all 0.6s linear;
+.pi_wrap_star img:nth-child(2) {
+  left: 56px;
+  top: 28px;
+  -webkit-animation: fade-img 3s infinite;
+          animation: fade-img 3s infinite;
 }
-.pi_wrap.complete .main_pi {
-  animation: fade-img 3s ease-in-out -0.5s infinite alternate;
-  -webkit-animation: fade-img 3s ease-in-out -0.5s infinite alternate;
+.pi_wrap_star img:nth-child(3) {
+  left: 57px;
+  top: 76px;
+  -webkit-animation: fade-img 4s infinite;
+          animation: fade-img 4s infinite;
 }
-.pi_wrap.complete h4 {
+.pi_wrap_star img:nth-child(4) {
+  left: 124px;
+  top: 58px;
+  -webkit-animation: fade-img 5s infinite;
+          animation: fade-img 5s infinite;
+}
+.pi_wrap_star img:nth-child(5) {
+  left: 34px;
+  top: 134px;
+  -webkit-animation: fade-img 5s infinite;
+          animation: fade-img 5s infinite;
+}
+.pi_wrap_star img:nth-child(6) {
+  left: 0px;
+  top: 112px;
+  -webkit-animation: fade-img 3s infinite;
+          animation: fade-img 3s infinite;
+}
+.pi_wrap_star img:nth-child(7) {
+  left: 91px;
+  top: 136px;
+  -webkit-animation: fade-img 5s infinite;
+          animation: fade-img 5s infinite;
+}
+.pi_wrap_star img:nth-child(8) {
+  left: 175px;
+  top: 39px;
+  -webkit-animation: fade-img 6s infinite;
+          animation: fade-img 6s infinite;
+}
+.pi_wrap h4 {
   opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.pi_wrap.complete:hover {
+.pi_wrap:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.pi_wrap.complete:hover .img_pi {
+.pi_wrap:hover .img_pi {
   opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.pi_wrap.complete:hover .main_pi {
-  -webkit-animation: 0;
-          animation: 0;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.pi_wrap.complete:hover h4 {
+.pi_wrap:hover h4 {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -865,136 +913,192 @@ p {
   transition: all 0.3s linear;
 }
 @media (min-width: 1024px) {
-  .pi_wrap.complete h4 {
-    opacity: 0;
+  .pi_wrap {
+    display: block;
   }
 }
 
 .thoughts_wrap {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  position: relative;
 }
 .thoughts_wrap .img_thoughts {
-  left: 50%;
-  position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   opacity: 0.3;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   width: 240px;
 }
-.thoughts_wrap .main_thoughts {
-  -webkit-transform: translate(-10px, 46px);
-          transform: translate(-10px, 46px);
-  width: 222px;
+.thoughts_wrap_star img {
+  position: absolute;
 }
-.thoughts_wrap .main_thoughts path {
-  opacity: 0;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+.thoughts_wrap_star img:first-child {
+  left: 15px;
+  top: 65px;
+  -webkit-animation: fade-img 3s infinite;
+          animation: fade-img 3s infinite;
 }
-.thoughts_wrap.complete .img_thoughts {
-  opacity: 0.3;
-  -webkit-transition: all 0.6s linear;
-  transition: all 0.6s linear;
+.thoughts_wrap_star img:nth-child(2) {
+  left: 32px;
+  top: 90px;
+  -webkit-animation: fade-img 2s infinite;
+          animation: fade-img 2s infinite;
 }
-.thoughts_wrap.complete .main_thoughts {
-  animation: fade-img 3s ease-in-out 1s infinite alternate;
-  -webkit-animation: fade-img 3s ease-in-out 1s infinite alternate;
+.thoughts_wrap_star img:nth-child(3) {
+  left: 117px;
+  top: 104px;
+  -webkit-animation: fade-img 5s infinite;
+          animation: fade-img 5s infinite;
 }
-.thoughts_wrap.complete h4 {
+.thoughts_wrap_star img:nth-child(4) {
+  left: 160px;
+  top: 194px;
+  -webkit-animation: fade-img 4s infinite;
+          animation: fade-img 4s infinite;
+}
+.thoughts_wrap_star img:nth-child(5) {
+  left: 48px;
+  top: 160px;
+  -webkit-animation: fade-img 5s infinite;
+          animation: fade-img 5s infinite;
+}
+.thoughts_wrap_star img:nth-child(6) {
+  left: 0px;
+  top: 112px;
+  -webkit-animation: fade-img 3s infinite;
+          animation: fade-img 3s infinite;
+}
+.thoughts_wrap_star img:nth-child(7) {
+  left: 116px;
+  top: 298px;
+  -webkit-animation: fade-img 4s infinite;
+          animation: fade-img 4s infinite;
+}
+.thoughts_wrap_star img:nth-child(8) {
+  left: 190px;
+  top: 360px;
+  -webkit-animation: fade-img 3s infinite;
+          animation: fade-img 3s infinite;
+}
+.thoughts_wrap_star img:nth-child(9) {
+  left: 96px;
+  top: 375px;
+  -webkit-animation: fade-img 4s infinite;
+          animation: fade-img 4s infinite;
+}
+.thoughts_wrap h4 {
   opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.thoughts_wrap.complete:hover {
+.thoughts_wrap:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.thoughts_wrap.complete:hover .img_thoughts {
+.thoughts_wrap:hover .img_thoughts {
   opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.thoughts_wrap.complete:hover .main_thoughts {
-  -webkit-animation: 0;
-          animation: 0;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.thoughts_wrap.complete:hover h4 {
+.thoughts_wrap:hover h4 {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
-  top: 0px;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 @media (min-width: 1024px) {
-  .thoughts_wrap.complete h4 {
-    opacity: 0;
+  .thoughts_wrap {
+    display: block;
   }
 }
 
 .venice_wrap {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  position: relative;
 }
 .venice_wrap .img_venice {
-  left: 50%;
   width: 300px;
-  position: absolute;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   opacity: 0.3;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.venice_wrap .main_venice {
-  -webkit-transform: translate(3px, 15px);
-          transform: translate(3px, 15px);
-  width: 292px;
+.venice_wrap_star img {
+  position: absolute;
 }
-.venice_wrap .main_venice path {
-  opacity: 0;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
+.venice_wrap_star img:first-child {
+  left: 66px;
+  top: 40px;
+  -webkit-animation: fade-img 3s infinite;
+          animation: fade-img 3s infinite;
 }
-.venice_wrap.complete .img_venice {
+.venice_wrap_star img:nth-child(2) {
+  left: 186px;
+  top: 34px;
+  -webkit-animation: fade-img 2s infinite;
+          animation: fade-img 2s infinite;
+}
+.venice_wrap_star img:nth-child(3) {
+  left: 104px;
+  top: 100px;
+  -webkit-animation: fade-img 5s infinite;
+          animation: fade-img 5s infinite;
+}
+.venice_wrap_star img:nth-child(4) {
+  left: 223px;
+  top: 104px;
+  -webkit-animation: fade-img 3s infinite;
+          animation: fade-img 3s infinite;
+}
+.venice_wrap_star img:nth-child(5) {
+  left: 8px;
+  top: 178px;
+  -webkit-animation: fade-img 2s infinite;
+          animation: fade-img 2s infinite;
+}
+.venice_wrap_star img:nth-child(6) {
+  left: 84px;
+  top: 144px;
+  -webkit-animation: fade-img 5s infinite;
+          animation: fade-img 5s infinite;
+}
+.venice_wrap_star img:nth-child(7) {
+  left: 184px;
+  top: 174px;
+  -webkit-animation: fade-img 3s infinite;
+          animation: fade-img 3s infinite;
+}
+.venice_wrap_star img:nth-child(8) {
+  left: 278px;
+  top: 148px;
+  -webkit-animation: fade-img 4s infinite;
+          animation: fade-img 4s infinite;
+}
+.venice_wrap .img_venice {
   opacity: 0.3;
   -webkit-transition: all 0.6s linear;
   transition: all 0.6s linear;
 }
-.venice_wrap.complete .main_venice {
-  animation: fade-img 3s ease-in-out 2s infinite alternate;
-  -webkit-animation: fade-img 3s ease-in-out 2s infinite alternate;
-}
-.venice_wrap.complete h4 {
+.venice_wrap h4 {
   opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.venice_wrap.complete:hover {
+.venice_wrap:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.venice_wrap.complete:hover .img_venice {
+.venice_wrap:hover .img_venice {
   opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.venice_wrap.complete:hover .main_venice {
-  -webkit-animation: 0;
-          animation: 0;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.venice_wrap.complete:hover h4 {
+.venice_wrap:hover h4 {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -1003,6 +1107,9 @@ p {
   transition: all 0.3s linear;
 }
 @media (min-width: 1024px) {
+  .venice_wrap {
+    display: block;
+  }
   .venice_wrap .main_venice {
     width: 344px;
   }
