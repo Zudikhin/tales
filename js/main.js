@@ -18,5 +18,69 @@ $(document).ready(function() {
         });
     }
 
+    anime({
+        targets: '.img_tawny .tawny_wrap_line',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 500,
+        delay: function(el, i) { return i * 500 },
+        direction: 'none',
+        loop: false,
+        update: function(anim) {
+            $(".img_tawny .tawny_wrap_line").css("opacity", "1");
+            if(anim.progress == 100) {
+                $(".tawny_wrap").addClass("complete");
+            }
+        }
+    });
+
+    anime({
+        targets: '.img_thoughts .thoughts_wrap_line',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 500,
+        delay: function(el, i) { return i * 500 },
+        direction: 'none',
+        loop: false,
+        update: function(anim) {
+            $(".img_thoughts .thoughts_wrap_line").css("opacity", "1");
+            if(anim.progress == 100) {
+                $(".thoughts_wrap").addClass("complete");
+            }
+        }
+    });
+
+    anime({
+        targets: '.img_pi .pi_wrap_line',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 3000,
+        delay: function(el, i) { return i * 1200 },
+        direction: 'none',
+        loop: false,
+        update: function(anim) {
+            $(".img_pi .pi_wrap_line").css("opacity", "1");
+            if(anim.progress == 100) {
+                $(".pi_wrap").addClass("complete");
+            }
+        }
+    });
+
+    anime({
+        targets: '.img_venice .venice_wrap_line',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 1000,
+        delay: function(el, i) { return i * 500 },
+        direction: 'none',
+        loop: false,
+        update: function(anim) {
+            $(".img_venice .venice_wrap_line").css("opacity", "1");
+            if(anim.progress == 100) {
+                $(".venice_wrap").addClass("complete");
+            }
+        }
+    });
+
 });
 
