@@ -18,21 +18,7 @@ $(document).ready(function() {
         });
     }
 
-    anime({
-        targets: '.img_tawny .tawny_wrap_line',
-        strokeDashoffset: [anime.setDashoffset, 0],
-        easing: 'easeInOutSine',
-        duration: 500,
-        delay: function(el, i) { return i * 500 },
-        direction: 'none',
-        loop: false,
-        update: function(anim) {
-            $(".img_tawny .tawny_wrap_line").css("opacity", "1");
-            if(anim.progress == 100) {
-                $(".tawny_wrap").addClass("complete");
-            }
-        }
-    });
+    
 
     anime({
         targets: '.img_thoughts .thoughts_wrap_line',
@@ -78,6 +64,22 @@ $(document).ready(function() {
             $(".img_venice .venice_wrap_line").css("opacity", "1");
             if(anim.progress == 100) {
                 $(".venice_wrap").addClass("complete");
+            }
+        }
+    });
+
+    anime({
+        targets: '.img_tawny .tawny_wrap_line',
+        strokeDashoffset: [anime.setDashoffset, 0],
+        easing: 'easeInOutSine',
+        duration: 500,
+        delay: function(el, i) { return i * 500 },
+        direction: 'none',
+        loop: false,
+        update: function(anim) {
+            $(".img_tawny .tawny_wrap_line").css("opacity", "1");
+            if(anim.progress == 100) {
+                $(".tawny_wrap").addClass("complete");
             }
         }
     });

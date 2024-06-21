@@ -770,7 +770,6 @@ p {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   position: relative;
-  opacity: 0;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
 }
