@@ -390,6 +390,24 @@ p {
     margin-left: auto;
   }
 }
+@media (min-width: 1024px) {
+  .header_block_logo {
+    opacity: 0;
+  }
+  .header_block_logo.show {
+    opacity: 1;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+  .header_block_drop_btn {
+    opacity: 0;
+  }
+  .header_block_drop_btn.show {
+    opacity: 1;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+  }
+}
 @media (min-width: 1200px) {
   .header {
     padding: 30px 0px 20px 0px;
@@ -404,6 +422,29 @@ p {
   }
 }
 
+@-webkit-keyframes fade-span {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade-span {
+  0% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 .main {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -463,6 +504,25 @@ p {
   opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  display: none;
+}
+.main .tawny_home span {
+  display: block;
+  font-family: "Special Elite", system-ui;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.main .tawny_home span.show {
+  opacity: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .main .pi_home {
   display: -webkit-box;
@@ -489,6 +549,25 @@ p {
   color: #fff;
   position: relative;
   margin-top: 10px;
+  opacity: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  display: none;
+}
+.main .pi_home span {
+  display: block;
+  font-family: "Special Elite", system-ui;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.main .pi_home span.show {
   opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -522,6 +601,28 @@ p {
   opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  display: none;
+}
+.main .thoughts_home span {
+  position: absolute;
+  left: 50px;
+  bottom: 0px;
+  display: block;
+  font-family: "Special Elite", system-ui;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.main .thoughts_home span.show {
+  opacity: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 .main .venice_home {
   display: -webkit-box;
@@ -547,6 +648,25 @@ p {
   text-align: center;
   color: #fff;
   margin-top: 0px;
+  opacity: 1;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+  display: none;
+}
+.main .venice_home span {
+  display: block;
+  font-family: "Special Elite", system-ui;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 36px;
+  text-align: center;
+  color: #fff;
+  margin-top: 0px;
+  opacity: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.main .venice_home span.show {
   opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -613,6 +733,10 @@ p {
     opacity: 0;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
+    display: block;
+  }
+  .main .tawny_home span {
+    margin-top: -35px;
   }
   .main .pi_home {
     display: block;
@@ -631,6 +755,10 @@ p {
     opacity: 0;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
+    display: block;
+  }
+  .main .pi_home span {
+    margin-top: -33px;
   }
   .main .thoughts_home {
     display: block;
@@ -651,6 +779,10 @@ p {
     opacity: 0;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
+    display: block;
+  }
+  .main .thoughts_home span {
+    bottom: 5px;
   }
   .main .venice_home {
     display: block;
@@ -672,6 +804,10 @@ p {
     margin-top: 0px;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
+    display: block;
+  }
+  .main .venice_home span {
+    margin-top: -33px;
   }
 }
 @media (min-width: 1200px) {
@@ -683,12 +819,20 @@ p {
     font-size: 24px;
     line-height: 32px;
   }
+  .main .tawny_home span {
+    font-size: 24px;
+    line-height: 32px;
+  }
   .main .pi_home {
     width: 200px;
     height: 250px;
     top: 90px;
   }
   .main .pi_home h4 {
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .main .pi_home span {
     font-size: 24px;
     line-height: 32px;
   }
@@ -702,12 +846,20 @@ p {
     font-size: 24x;
     line-height: 32px;
   }
+  .main .thoughts_home span {
+    font-size: 24px;
+    line-height: 32px;
+  }
   .main .venice_home {
     margin-top: 0px;
     bottom: 100px;
   }
   .main .venice_home h4 {
     top: -15px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  .main .venice_home span {
     font-size: 24px;
     line-height: 32px;
   }
@@ -752,18 +904,24 @@ p {
 }
 @-webkit-keyframes show-block {
   0% {
-    opacity: 0;
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.7;
   }
   100% {
-    opacity: 1;
+    opacity: 0.3;
   }
 }
 @keyframes show-block {
   0% {
-    opacity: 0;
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.7;
   }
   100% {
-    opacity: 1;
+    opacity: 0.3;
   }
 }
 .tawny_wrap {
@@ -839,22 +997,13 @@ p {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.tawny_wrap:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.tawny_wrap:hover .img_tawny {
-  opacity: 1;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.tawny_wrap:hover h4 {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  top: 0px;
+.tawny_wrap.complete .img_tawny {
+  -webkit-animation-name: show-block;
+          animation-name: show-block;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -862,6 +1011,27 @@ p {
   opacity: 1;
   -webkit-transition: all 1 linear;
   transition: all 1 linear;
+}
+.tawny_wrap.complete:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.tawny_wrap.complete:hover .img_tawny {
+  opacity: 1;
+  -webkit-animation: 0;
+          animation: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.tawny_wrap.complete:hover h4 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  top: 0px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 
 .pi_wrap {
@@ -873,6 +1043,18 @@ p {
   opacity: 0.3;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  -webkit-animation-name: show-block;
+          animation-name: show-block;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  transition: all 0.3s linear;
+}
+.pi_wrap .img_pi path {
+  opacity: 1;
+  -webkit-transition: all 1 linear;
+  transition: all 1 linear;
 }
 .pi_wrap_star img {
   position: absolute;
@@ -930,18 +1112,35 @@ p {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.pi_wrap:hover {
+.pi_wrap.complete .img_pi {
+  -webkit-animation-name: show-block;
+          animation-name: show-block;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.pi_wrap.complete .img_pi path {
+  opacity: 1;
+  -webkit-transition: all 1 linear;
+  transition: all 1 linear;
+}
+.pi_wrap.complete:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.pi_wrap:hover .img_pi {
+.pi_wrap.complete:hover .img_pi {
   opacity: 1;
+  -webkit-animation: 0;
+          animation: 0;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.pi_wrap:hover h4 {
+.pi_wrap.complete:hover h4 {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -1033,21 +1232,13 @@ p {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.thoughts_wrap:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.thoughts_wrap:hover .img_thoughts {
-  opacity: 0.6;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.thoughts_wrap:hover h4 {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
+.thoughts_wrap.complete .img_thoughts {
+  -webkit-animation-name: show-block;
+          animation-name: show-block;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -1055,6 +1246,26 @@ p {
   opacity: 1;
   -webkit-transition: all 1 linear;
   transition: all 1 linear;
+}
+.thoughts_wrap.complete:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.thoughts_wrap.complete:hover .img_thoughts {
+  opacity: 1;
+  -webkit-animation: 0;
+          animation: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.thoughts_wrap.complete:hover h4 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 @media (min-width: 1024px) {
   .thoughts_wrap {
@@ -1139,22 +1350,13 @@ p {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.venice_wrap:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.venice_wrap:hover .img_venice {
-  opacity: 1;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.venice_wrap:hover h4 {
-  opacity: 1;
-  -webkit-transform: scale(1);
-          transform: scale(1);
-  top: 0px;
+.venice_wrap.complete .img_venice {
+  -webkit-animation-name: show-block;
+          animation-name: show-block;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -1162,6 +1364,27 @@ p {
   opacity: 1;
   -webkit-transition: all 1 linear;
   transition: all 1 linear;
+}
+.venice_wrap.complete:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.venice_wrap.complete:hover .img_venice {
+  opacity: 1;
+  -webkit-animation: 0;
+          animation: 0;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.venice_wrap.complete:hover h4 {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  top: 0px;
+  -webkit-transition: all 0.3s linear;
+  transition: all 0.3s linear;
 }
 @media (min-width: 1024px) {
   .venice_wrap {
