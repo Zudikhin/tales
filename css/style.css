@@ -499,12 +499,13 @@ p {
   font-weight: 400;
   line-height: 36px;
   text-align: center;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
   margin-top: 10px;
   opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
   display: none;
+  color: rgba(255, 255, 255, 0.7);
 }
 .main .tawny_home span {
   display: block;
@@ -546,7 +547,7 @@ p {
   font-weight: 400;
   line-height: 36px;
   text-align: center;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
   position: relative;
   margin-top: 10px;
   opacity: 1;
@@ -597,7 +598,7 @@ p {
   font-weight: 400;
   line-height: 36px;
   text-align: center;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
   opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
@@ -646,7 +647,7 @@ p {
   font-weight: 400;
   line-height: 36px;
   text-align: center;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
   margin-top: 0px;
   opacity: 1;
   -webkit-transition: all 0.3s linear;
@@ -726,10 +727,7 @@ p {
   .main .tawny_home h4 {
     font-size: 24px;
     line-height: 32px;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
     position: relative;
-    top: -40px;
     opacity: 0;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
@@ -748,10 +746,7 @@ p {
   .main .pi_home h4 {
     font-size: 24px;
     line-height: 32px;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
     position: relative;
-    top: -40px;
     opacity: 0;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear;
@@ -772,8 +767,6 @@ p {
   .main .thoughts_home h4 {
     font-size: 24px;
     line-height: 32px;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
     position: absolute;
     bottom: 10px;
     opacity: 0;
@@ -796,8 +789,6 @@ p {
   .main .venice_home h4 {
     font-size: 24px;
     line-height: 32px;
-    -webkit-transform: scale(1.5);
-            transform: scale(1.5);
     position: relative;
     top: 0px;
     opacity: 0;
@@ -816,12 +807,12 @@ p {
     padding-top: 100px;
   }
   .main .tawny_home h4 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 28px;
   }
   .main .tawny_home span {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 28px;
   }
   .main .pi_home {
     width: 200px;
@@ -829,12 +820,12 @@ p {
     top: 90px;
   }
   .main .pi_home h4 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 28px;
   }
   .main .pi_home span {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 28px;
   }
   .main .pi_home.complete:hover h4 {
     top: auto;
@@ -843,25 +834,25 @@ p {
     margin-top: 0px;
   }
   .main .thoughts_home h4 {
-    font-size: 24x;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 28px;
   }
   .main .thoughts_home span {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 28px;
   }
   .main .venice_home {
     margin-top: 0px;
     bottom: 100px;
   }
   .main .venice_home h4 {
-    top: -15px;
-    font-size: 24px;
-    line-height: 32px;
+    top: 0px;
+    font-size: 22px;
+    line-height: 28px;
   }
   .main .venice_home span {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 22px;
+    line-height: 28px;
   }
 }
 @media (min-width: 1600px) {
@@ -1013,13 +1004,13 @@ p {
   transition: all 1 linear;
 }
 .tawny_wrap.complete:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 .tawny_wrap.complete:hover .img_tawny {
-  opacity: 1;
+  opacity: 0.6;
   -webkit-animation: 0;
           animation: 0;
   -webkit-transition: all 0.3s linear;
@@ -1096,7 +1087,7 @@ p {
           animation: fade-img 3s infinite;
 }
 .pi_wrap_star img:nth-child(7) {
-  left: 91px;
+  left: 102px;
   top: 136px;
   -webkit-animation: fade-img 5s infinite;
           animation: fade-img 5s infinite;
@@ -1111,6 +1102,7 @@ p {
   opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  top: 0px;
 }
 .pi_wrap.complete .img_pi {
   -webkit-animation-name: show-block;
@@ -1128,13 +1120,13 @@ p {
   transition: all 1 linear;
 }
 .pi_wrap.complete:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 .pi_wrap.complete:hover .img_pi {
-  opacity: 1;
+  opacity: 0.6;
   -webkit-animation: 0;
           animation: 0;
   -webkit-transition: all 0.3s linear;
@@ -1198,14 +1190,14 @@ p {
           animation: fade-img 4s infinite;
 }
 .thoughts_wrap_star img:nth-child(5) {
-  left: 48px;
+  left: 52px;
   top: 160px;
   -webkit-animation: fade-img 5s infinite;
           animation: fade-img 5s infinite;
 }
 .thoughts_wrap_star img:nth-child(6) {
-  left: 0px;
-  top: 112px;
+  left: 14px;
+  top: 141px;
   -webkit-animation: fade-img 3s infinite;
           animation: fade-img 3s infinite;
 }
@@ -1248,13 +1240,13 @@ p {
   transition: all 1 linear;
 }
 .thoughts_wrap.complete:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 .thoughts_wrap.complete:hover .img_thoughts {
-  opacity: 1;
+  opacity: 0.6;
   -webkit-animation: 0;
           animation: 0;
   -webkit-transition: all 0.3s linear;
@@ -1295,18 +1287,18 @@ p {
 }
 .venice_wrap_star img:nth-child(2) {
   left: 186px;
-  top: 34px;
+  top: 12px;
   -webkit-animation: fade-img 2s infinite;
           animation: fade-img 2s infinite;
 }
 .venice_wrap_star img:nth-child(3) {
   left: 104px;
-  top: 100px;
+  top: 106px;
   -webkit-animation: fade-img 5s infinite;
           animation: fade-img 5s infinite;
 }
 .venice_wrap_star img:nth-child(4) {
-  left: 223px;
+  left: 194px;
   top: 104px;
   -webkit-animation: fade-img 3s infinite;
           animation: fade-img 3s infinite;
@@ -1325,7 +1317,7 @@ p {
 }
 .venice_wrap_star img:nth-child(7) {
   left: 184px;
-  top: 174px;
+  top: 160px;
   -webkit-animation: fade-img 3s infinite;
           animation: fade-img 3s infinite;
 }
@@ -1366,13 +1358,13 @@ p {
   transition: all 1 linear;
 }
 .venice_wrap.complete:hover {
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 .venice_wrap.complete:hover .img_venice {
-  opacity: 1;
+  opacity: 0.6;
   -webkit-animation: 0;
           animation: 0;
   -webkit-transition: all 0.3s linear;
