@@ -217,6 +217,31 @@ p {
     padding: 0px;
   }
 }
+.preloader {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 100vh;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 10;
+  background: url(../img/back.webp);
+  background-size: cover;
+  background-position: 50%;
+}
+.preloader img {
+  -webkit-animation: sacle_logo 3s infinite;
+          animation: sacle_logo 3s infinite;
+}
+
 .header {
   position: absolute;
   left: 0px;
@@ -414,6 +439,9 @@ p {
   }
   .header_block {
     height: 60px;
+  }
+  .header_block_logo img {
+    width: 220px;
   }
 }
 @media (min-width: 1600px) {
@@ -843,7 +871,7 @@ p {
   }
   .main .venice_home {
     margin-top: 0px;
-    bottom: 100px;
+    top: 400px;
   }
   .main .venice_home h4 {
     top: 0px;
@@ -866,7 +894,7 @@ p {
     top: 150px;
   }
   .main .venice_home {
-    bottom: 130px;
+    top: 480px;
   }
 }
 
@@ -891,6 +919,34 @@ p {
   }
   100% {
     opacity: 0;
+  }
+}
+@-webkit-keyframes sacle_logo {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes sacle_logo {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @-webkit-keyframes show-block {
