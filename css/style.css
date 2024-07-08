@@ -233,7 +233,7 @@ p {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 10;
-  background: url(../img/back.webp);
+  background: url(../img/stars.webp);
   background-size: cover;
   background-position: 50%;
 }
