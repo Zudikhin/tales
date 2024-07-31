@@ -240,6 +240,13 @@ p {
 .preloader img {
   -webkit-animation: sacle_logo 3s infinite;
           animation: sacle_logo 3s infinite;
+  width: calc(100% - 100px);
+  max-width: 500px;
+}
+@media (min-width: 768px) {
+  .preloader img {
+    max-width: 700px;
+  }
 }
 
 .header {
@@ -548,11 +555,6 @@ p {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.main .tawny_home span.show {
-  opacity: 1;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
 .main .pi_home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,11 +595,6 @@ p {
   color: #fff;
   margin-top: 10px;
   opacity: 0;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.main .pi_home span.show {
-  opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
@@ -648,11 +645,6 @@ p {
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.main .thoughts_home span.show {
-  opacity: 1;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
 .main .venice_home {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -692,11 +684,6 @@ p {
   color: #fff;
   margin-top: 0px;
   opacity: 0;
-  -webkit-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.main .venice_home span.show {
-  opacity: 1;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }

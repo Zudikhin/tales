@@ -1,7 +1,7 @@
 $(window).on('load', function() {
     setTimeout(function() {
         $('.preloader').fadeOut('slow', function() {
-            $(this).remove();
+            $(this).remove(); 
         });
         anime({
             targets: '.img_thoughts .thoughts_wrap_line',
