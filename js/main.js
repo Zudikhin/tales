@@ -27,12 +27,12 @@ $(window).on('load', function() {
             }
         });
         anime({
-            targets: '.img_pi .pi_wrap_line',
+            targets: '.img_pi path',
             strokeDashoffset: [anime.setDashoffset, 0],
             easing: 'easeInOutSine',
-            duration: 2400,
+            duration: 6250,
             delay: function(el, i) { return i * 1200 },
-            direction: 'none',
+            direction: 'alternate',
             loop: false,
             update: function(anim) {
                 $(".img_pi .pi_wrap_line").css("opacity", "1");
